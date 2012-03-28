@@ -4,6 +4,9 @@ opencc (0.3.0-2) unstable; urgency=low
   * Add libopencc-dbg package.
   * Bump standard version to 3.9.3.
   * Add YunQiang Su to Uploaders.
+  * Enable CPPFLAGS hardening flags (Closes: #665322).
+  * Better explanation for the -c option arguments of opencc,
+    give the path of these files out. (Closes: #656201).
 
  -- YunQiang Su <wzssyqa@gmail.com>  Thu, 29 Mar 2012 03:22:51 +0800
 
