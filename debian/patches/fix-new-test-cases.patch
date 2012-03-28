@@ -1,9 +1,12 @@
-Description: Fix new test cases
+Description: Fix new test cases, install data file to meet need of multi-arch
  Copy nedded dict files to ${PROJECT_BINARY_DIR}/data for tests.
-Author: Kan-Ru Chen <koster@debian.org>
+ Install data files to ${DIR_LIBRARY} instead of ${DIR_SHARE}
+Author: Kan-Ru Chen <koster@debian.org>, YunQiang Su <wzssyqa@gmail.com>
 
---- a/data/CMakeLists.txt
-+++ b/data/CMakeLists.txt
+Index: opencc/data/CMakeLists.txt
+===================================================================
+--- opencc.orig/data/CMakeLists.txt	2012-03-29 01:56:20.043932047 +0800
++++ opencc/data/CMakeLists.txt	2012-03-29 03:16:12.183694991 +0800
 @@ -92,4 +92,10 @@
  		${CHINA_DICT_FILES}
  	DESTINATION
@@ -17,8 +20,10 @@ Author: Kan-Ru Chen <koster@debian.org>
 +		configure_file(${DICT} ${PROJECT_BINARY_DIR}/data COPYONLY)
 +	endforeach (DICT)
 +endif (BUILD_TESTING)
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
+Index: opencc/CMakeLists.txt
+===================================================================
+--- opencc.orig/CMakeLists.txt	2012-03-29 01:56:20.043932047 +0800
++++ opencc/CMakeLists.txt	2012-03-29 03:16:34.919807728 +0800
 @@ -20,6 +20,7 @@
  cmake_minimum_required(VERSION 2.8)
  set (PACKAGE_NAME opencc)
@@ -27,3 +32,12 @@ Author: Kan-Ru Chen <koster@debian.org>
  enable_testing()
  
  ######## Package information
+@@ -86,7 +87,7 @@
+ 	set (DIR_ETC ${SYSCONF_INSTALL_DIR})
+ endif (DEFINED SYSCONF_INSTALL_DIR)
+ 
+-set (DIR_SHARE_OPENCC ${DIR_SHARE}/opencc)
++set (DIR_SHARE_OPENCC ${DIR_LIBRARY}/opencc)
+ set (DIR_SHARE_LOCALE ${DIR_SHARE}/locale)
+ 
+ ######## Configuration

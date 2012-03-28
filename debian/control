@@ -1,9 +1,10 @@
 Source: opencc
 Priority: optional
 Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org> 
-Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias.hejun@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), dpkg-dev (>= 1.16.1.1~), cmake
-Standards-Version: 3.9.2
+Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias.hejun@gmail.com>,
+		YunQiang Su <wzssyqa@gmail.com>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1~), cmake
+Standards-Version: 3.9.3
 Section: libs
 Homepage: http://code.google.com/p/opencc
 Vcs-Git: git://git.debian.org/git/pkg-ime/opencc.git
@@ -21,8 +22,9 @@ Description: simplified-traditional chinese conversion tool
  This package includes the conversion tool.
 
 Package: libopencc1
-Section: libs
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: libopencc0
 Conflicts: libopencc0
@@ -41,3 +43,14 @@ Description: simplified-traditional chinese conversion library - development
  simplified chinese. 
  .
  This package includes the development support files.
+
+Package: libopencc-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
+Description: simplified-traditional chinese conversion library - debug
+ opencc is a library for converting character between traditional chinese and
+ simplified chinese.
+ .
+ This package includes the debug symbols which is useful when debug.
