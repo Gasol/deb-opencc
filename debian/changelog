@@ -1,3 +1,11 @@
+opencc (0.3.0-3) unstable; urgency=low
+
+  * Rebuild to 
+    generate little endian mo file on any arch (Closes: #670016).
+  * add an - before include buildflags.mk
+
+ -- YunQiang Su <wzssyqa@gmail.com>  Sun, 10 Jun 2012 19:35:51 +0800
+
 opencc (0.3.0-2) unstable; urgency=low
 
   * Multi-arch it.
