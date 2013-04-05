@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-#define BUFFER_SIZE 32768
+#define BUFFER_SIZE 65536
 
 void convert(const char * input_file, const char * output_file, const char * config_file)
 {
@@ -46,6 +46,7 @@ void convert(const char * input_file, const char * output_file, const char * con
 			fprintf(stderr, _("Can not read file: %s\n"), input_file);
 			exit(1);
 		}
+		skip_utf8_bom(fp);
 	}
 	
 	if (output_file)
@@ -61,33 +62,48 @@ void convert(const char * input_file, const char * output_file, const char * con
 	size_t size = BUFFER_SIZE;
 	char * buffer_in = NULL, * buffer_out = NULL;
 	buffer_in = (char *) malloc(size * sizeof(char));
-	
-	while (fgets(buffer_in, size, fp) != NULL)
-	{
-		size_t freesize = size;
-		
-		char * buffer_in_p = buffer_in;
-		size_t line_length = strlen(buffer_in_p);
-		while (line_length + 1 == freesize && buffer_in_p[line_length - 2] != '\n')
-		{
-			//如果一行沒讀完，則最後一個字符不是換行，且讀滿緩衝區
-			buffer_in_p += size - 1;
-			freesize = size + 1;
-			size += size;
-			size_t offset = buffer_in_p - buffer_in;
-			buffer_in = (char *) realloc(buffer_in, size * sizeof(char));
-			buffer_in_p = buffer_in + offset;
-			
-			if (fgets(buffer_in_p, freesize, fp) == NULL)
-				break;
 
-			line_length = strlen(buffer_in_p);
-		}
-		
+	char* lookahead = (char*) malloc(size * sizeof(char));
+	size_t lookahead_size = 0;
+
+    while (!feof(fp))
+    {
+	size_t read;
+
+	if (lookahead_size > 0) {
+	    memcpy(buffer_in, lookahead, lookahead_size);
+	    read = fread(buffer_in + lookahead_size, 1, size - lookahead_size, fp) + lookahead_size;
+	    lookahead_size = 0;
+	}
+	else
+	    read = fread(buffer_in, 1, size, fp);
+
+        // If we haven't finished reading after filling the entire buffer,
+        // then it could be that we broke within an UTF-8 character, in
+        // that case we must backtrack and find the boundary
+        if (read == size) {
+            // Find the boundary of last UTF-8 character
+            int i;
+            for (i = read - 1; i >= 0; i--)
+            {
+                char c = buffer_in[i];
+                if (!(c & 0x80) || ((c & 0xC0) == 0xC0))
+                    break;
+            }
+
+	    assert(i >= 0);
+	    memcpy(lookahead, buffer_in + i, read - i);
+	    lookahead_size = read - i;
+	    buffer_in[i] = '\0';
+        }
+        else
+            buffer_in[read] = '\0';
+
 		buffer_out = opencc_convert_utf8(od, buffer_in, (size_t) -1);
 		if (buffer_out != (char *) -1)
 		{
 			fprintf(fpo, "%s", buffer_out);
+			free(buffer_out);
 		}
 		else
 		{
@@ -95,11 +111,24 @@ void convert(const char * input_file, const char * output_file, const char * con
 			break;
 		}
 	}
+
+	if (lookahead_size > 0) {
+	    assert(lookahead_size < size);
+
+	    lookahead[lookahead_size] = '\0';
+	    buffer_out = opencc_convert_utf8(od, lookahead, (size_t) -1);
+	    if (buffer_out != (char*) -1) {
+		fprintf(fpo, "%s", buffer_out);
+		free(buffer_out);
+	    }
+	    else
+		opencc_perror(_("OpenCC error"));
+	}
 	
 	opencc_close(od);
 	
+	free(lookahead);
 	free(buffer_in);
-	free(buffer_out);
 	
 	fclose(fp);
 	fclose(fpo);
@@ -112,7 +141,7 @@ void show_version()
 	printf(_("Version %s\n"), VERSION);
 	printf(_("\n"));
 	printf(_("Author: %s\n"), "BYVoid <byvoid.kcp@gmail.com>");
-	printf(_("Bug Report: %s\n"), "http://code.google.com/p/open-chinese-convert/issues/entry");
+	printf(_("Bug Report: %s\n"), "http://code.google.com/p/opencc/issues/entry");
 	printf(_("\n"));
 }
 
@@ -154,7 +183,7 @@ int main(int argc, char ** argv)
 	static int oc;
 	static char *input_file, *output_file, *config_file;
 
-	while((oc = getopt_long(argc, argv, "vh:i:o:c:", longopts, NULL)) != -1)
+	while((oc = getopt_long(argc, argv, "vh?i:o:c:", longopts, NULL)) != -1)
 	{
 		switch (oc)
 		{
@@ -162,11 +191,9 @@ int main(int argc, char ** argv)
 			show_version();
 			return 0;
 		case 'h':
+		case '?':
 			show_usage();
 			return 0;
-		case '?':
-			printf(_("Please use %s --help.\n"), argv[0]);
-			return 1;
 		case 'i':
 			input_file = mstrcpy(optarg);
 			break;

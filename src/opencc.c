@@ -16,12 +16,13 @@
 * limitations under the License.
 */
 
+#include "common.h"
 #include "opencc.h"
 #include "config_reader.h"
 #include "converter.h"
 #include "dictionary_set.h"
+#include "dictionary_group.h"
 #include "encoding.h"
-#include "utils.h"
 
 typedef struct
 {
@@ -70,7 +71,7 @@ char * opencc_convert_utf8(opencc_t t_opencc, const char * inbuf, size_t length)
 	if (winbuf == (ucs4_t *) -1)
 	{
 		/* 輸入數據轉換失敗 */
-		errnum = OPENCC_ERROR_ENCODIND;
+		errnum = OPENCC_ERROR_ENCODING;
 		return (char *) -1;
 	}
 
@@ -112,7 +113,7 @@ char * opencc_convert_utf8(opencc_t t_opencc, const char * inbuf, size_t length)
 			free(outbuf);
 			free(winbuf);
 			free(woutbuf);
-			errnum = OPENCC_ERROR_ENCODIND;
+			errnum = OPENCC_ERROR_ENCODING;
 			return (char *) -1;
 		}
 
@@ -159,9 +160,11 @@ opencc_t opencc_open(const char * config_file)
 	converter_set_conversion_mode(opencc->converter, OPENCC_CONVERSION_FAST);
 
 	/* 加載默認辭典 */
-	int retval;
 	if (config_file == NULL)
-		retval = 0;
+	{
+		/*TODO load default*/
+		assert(0);
+	}
 	else
 	{
 		config_t config = config_open(config_file);
@@ -207,7 +210,7 @@ int opencc_dict_load(opencc_t t_opencc, const char * dict_filename,
 	dictionary_group_t dictionary_group;
 	if (opencc->dictionary_set == NULL)
 	{
-		opencc->dictionary_set = dictionary_set_open();
+		opencc->dictionary_set = dictionary_set_open(NULL);
 		dictionary_group = dictionary_set_new_group(opencc->dictionary_set);
 	}
 	else
@@ -267,7 +270,7 @@ void opencc_perror(const char * spec)
 	case OPENCC_ERROR_CONVERTER:
 		converter_perror(_("Converter error"));
 		break;
-	case OPENCC_ERROR_ENCODIND:
+	case OPENCC_ERROR_ENCODING:
 		perr(_("Encoding error"));
 		break;
 	default:

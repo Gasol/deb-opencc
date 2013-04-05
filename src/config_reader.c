@@ -18,6 +18,7 @@
 
 #include "config_reader.h"
 #include "dictionary_set.h"
+#include "dictionary_group.h"
 
 #define BUFFER_SIZE 8192
 #define DICTIONARY_MAX_COUNT 1024
@@ -37,7 +38,7 @@ struct _config_desc
 	char * title;
 	char * description;
 	dictionary_set_t dictionary_set;
-
+	char * file_path;
 	dictionary_buffer dicts[DICTIONARY_MAX_COUNT];
 	size_t dicts_count;
 	size_t stamp;
@@ -187,26 +188,17 @@ static char * parse_trim(char * str)
 
 static int parse(config_desc * config, const char * filename)
 {
-	FILE * fp = fopen(filename, "rb");
-	if (!fp)
-	{
-		/* 使用 PKGDATADIR 路徑 */
-		char * pkg_filename =
-				(char *) malloc(sizeof(char) * (strlen(filename) + strlen(PKGDATADIR) + 2));
-		sprintf(pkg_filename, "%s/%s", PKGDATADIR, filename);
-
-		fp = fopen(pkg_filename, "rb");
-		if (!fp)
-		{
-			free(pkg_filename);
-			errnum = CONFIG_ERROR_CANNOT_ACCESS_CONFIG_FILE;
-			return -1;
-		}
-		free(pkg_filename);
+	char * path = try_open_file(filename);
+	if (path == NULL) {
+		errnum = CONFIG_ERROR_CANNOT_ACCESS_CONFIG_FILE;
+		return -1;
 	}
-
+	config->file_path = get_file_path(path);
+	FILE * fp = fopen(path, "r");
+	assert(fp != NULL);
+	free(path);
+	skip_utf8_bom(fp);
 	static char buff[BUFFER_SIZE];
-
 	while (fgets(buff, BUFFER_SIZE, fp) != NULL)
 	{
 		char * trimed_buff = parse_trim(buff);
@@ -215,9 +207,7 @@ static int parse(config_desc * config, const char * filename)
 			/* Comment Line or empty line */
 			continue;
 		}
-
 		char * key = NULL, * value = NULL;
-
 		if (parse_line(trimed_buff, &key, &value) == -1)
 		{
 			free(key);
@@ -226,7 +216,6 @@ static int parse(config_desc * config, const char * filename)
 			errnum = CONFIG_ERROR_PARSE;
 			return -1;
 		}
-
 		if (parse_property(config, key, value) == -1)
 		{
 			free(key);
@@ -234,11 +223,9 @@ static int parse(config_desc * config, const char * filename)
 			fclose(fp);
 			return -1;
 		}
-
 		free(key);
 		free(value);
 	}
-
 	fclose(fp);
 	return 0;
 }
@@ -252,7 +239,7 @@ dictionary_set_t config_get_dictionary_set(config_t t_config)
 		dictionary_set_close(config->dictionary_set);
 	}
 
-	config->dictionary_set = dictionary_set_open();
+	config->dictionary_set = dictionary_set_open(t_config);
 	load_dictionary(config);
 
 	return config->dictionary_set;
@@ -297,6 +284,7 @@ config_t config_open(const char * filename)
 	config->dicts_count = 0;
 	config->stamp = 0;
 	config->dictionary_set = NULL;
+	config->file_path = NULL;
 
 	if (parse(config, filename) == -1)
 	{
@@ -317,5 +305,12 @@ void config_close(config_t t_config)
 
 	free(config->title);
 	free(config->description);
+	free(config->file_path);
 	free(config);
+}
+
+const char * config_get_file_path(config_t t_config)
+{
+	config_desc * config = (config_desc *) t_config;
+	return config->file_path;
 }
