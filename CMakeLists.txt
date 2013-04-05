@@ -20,13 +20,14 @@
 cmake_minimum_required(VERSION 2.8)
 set (PACKAGE_NAME opencc)
 project (${PACKAGE_NAME} C)
+include (CTest)
 enable_testing()
 
 ######## Package information
 set (PACKAGE_URL http://code.google.com/p/opencc)
 set (PACKAGE_BUGREPORT http://code.google.com/p/opencc/issues/entry)
 set (OPENCC_VERSION_MAJOR 0)
-set (OPENCC_VERSION_MINOR 3)
+set (OPENCC_VERSION_MINOR 4)
 set (OPENCC_VERSION_REVISION 0)
 
 if (CMAKE_BUILD_TYPE MATCHES Debug)
@@ -37,6 +38,14 @@ set (
 	OPENCC_VERSION
 	${OPENCC_VERSION_MAJOR}.${OPENCC_VERSION_MINOR}.${OPENCC_VERSION_REVISION}${version_suffix}
 )
+
+set(CPACK_SOURCE_PACKAGE_FILE_NAME
+  "${PACKAGE_NAME}-${OPENCC_VERSION_MAJOR}.${OPENCC_VERSION_MINOR}.${OPENCC_VERSION_REVISION}"
+)
+set(CPACK_SOURCE_IGNORE_FILES
+  "/build/;/release/;/debug/;/.git/;.gitignore;~$;${CPACK_SOURCE_IGNORE_FILES}"
+)
+include(CPack)
 
 ######## Validation
 

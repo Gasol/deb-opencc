@@ -19,10 +19,7 @@
 #ifndef __OPENCC_CONFIG_H_
 #define __OPENCC_CONFIG_H_
 
-#include "utils.h"
-#include "dictionary_set.h"
-
-typedef void * config_t;
+#include "common.h"
 
 typedef enum
 {
@@ -42,5 +39,7 @@ dictionary_set_t config_get_dictionary_set(config_t t_config);
 config_error config_errno(void);
 
 void config_perror(const char * spec);
+
+const char * config_get_file_path(config_t t_config);
 
 #endif /* __OPENCC_CONFIG_H_ */

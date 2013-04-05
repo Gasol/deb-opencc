@@ -19,10 +19,8 @@
 #ifndef __DICTIONARY_GROUP_H_
 #define __DICTIONARY_GROUP_H_
 
-#include "utils.h"
+#include "common.h"
 #include "dictionary/abstract.h"
-
-typedef void * dictionary_group_t;
 
 typedef enum
 {
@@ -33,7 +31,7 @@ typedef enum
 	DICTIONARY_ERROR_INVALID_INDEX,
 } dictionary_error;
 
-dictionary_group_t dictionary_group_open(void);
+dictionary_group_t dictionary_group_open(dictionary_set_t t_dictionary_set);
 
 void dictionary_group_close(dictionary_group_t t_dictionary);
 
@@ -53,5 +51,7 @@ size_t dictionary_group_count(dictionary_group_t t_dictionary);
 dictionary_error dictionary_errno(void);
 
 void dictionary_perror(const char * spec);
+
+dictionary_set_t dictionary_group_get_dictionary_set(dictionary_group_t t_dictionary);
 
 #endif /* __DICTIONARY_GROUP_H_ */
