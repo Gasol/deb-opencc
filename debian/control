@@ -15,6 +15,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/opencc.git
 Package: opencc
 Section: utils
 Architecture: any
+Multi-Arch: foreign
 Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: simplified-traditional chinese conversion tool
  opencc is a library for converting character between traditional chinese and
@@ -24,8 +25,8 @@ Description: simplified-traditional chinese conversion tool
 
 Package: libopencc1
 Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libopencc0
 Conflicts: libopencc0
@@ -38,6 +39,7 @@ Description: simplified-traditional chinese conversion library - runtime
 Package: libopencc-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
 Description: simplified-traditional chinese conversion library - development
  opencc is a library for converting character between traditional chinese and
@@ -49,6 +51,7 @@ Package: libopencc-dbg
 Section: debug
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
 Description: simplified-traditional chinese conversion library - debug
  opencc is a library for converting character between traditional chinese and
