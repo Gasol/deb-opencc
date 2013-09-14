@@ -1,3 +1,4 @@
 version=3
-http://googlecode.debian.net/p/opencc/opencc-(\d+.*)\.tar\.gz
-
+opts=downloadurlmangle=s%.*name=(.*?)&.*%https://opencc\.googlecode\.com/files/$1%,filenamemangle=s/.*name=(.*?)&.*/$1/ \
+http://code.google.com/p/opencc/downloads/list?can=1&q= \
+.*name=opencc(?:-|\.|_|_v|)(\d\S*)\.(?:tar\.xz|txz|tar\.bz2|tbz2|tar\.gz|tgz)&\S*
