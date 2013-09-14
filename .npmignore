@@ -10,9 +10,13 @@ merge.sh
 /data/scheme
 /src/wrapper
 /build
+/debug
+/release
 /other
 /debug.sh
 /release.sh
 /opencc.pc.in
 /opencc.gyp
 /INSTALL
+/doc/html
+/opencc.xcodeproj

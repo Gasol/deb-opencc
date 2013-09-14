@@ -16,28 +16,23 @@
  * limitations under the License.
  */
 
-#ifndef __OPENCC_CONFIG_H_
-#define __OPENCC_CONFIG_H_
+#ifndef __OPENCC_DICTIONARY_ABSTRACT_H_
+#define __OPENCC_DICTIONARY_ABSTRACT_H_
 
 #include "common.h"
-#include "dict_chain.h"
+#include "utils.h"
 
-typedef enum {
-  CONFIG_ERROR_VOID,
-  CONFIG_ERROR_CANNOT_ACCESS_CONFIG_FILE,
-  CONFIG_ERROR_PARSE,
-  CONFIG_ERROR_NO_PROPERTY,
-  CONFIG_ERROR_INVALID_DICT_TYPE,
-} config_error;
+Dict* dict_new(const char* filename, opencc_dictionary_type type);
 
-Config* config_open(const char* filename);
+void dict_delete(Dict* dict);
 
-void config_close(Config* config);
+const ucs4_t* const* dict_match_longest(Dict* dict,
+                                        const ucs4_t* word,
+                                        size_t maxlen,
+                                        size_t* match_length);
 
-DictChain* config_get_dict_chain(Config* config);
+size_t dict_get_all_match_lengths(Dict* dict,
+                                  const ucs4_t* word,
+                                  size_t* match_length);
 
-config_error config_errno(void);
-
-void config_perror(const char* spec);
-
-#endif /* __OPENCC_CONFIG_H_ */
+#endif /* __OPENCC_DICTIONARY_ABSTRACT_H_ */
