@@ -1,23 +1,24 @@
 Source: opencc
 Priority: optional
-Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org> 
-Uploaders: LI Daobing <lidaobing@debian.org>, Asias He <asias@debian.org>,
-		YunQiang Su <wzssyqa@gmail.com>
-Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1.1~), cmake
-Standards-Version: 3.9.3
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Uploaders: LI Daobing <lidaobing@debian.org>,
+           Asias He <asias@debian.org>,
+           YunQiang Su <wzssyqa@gmail.com>,
+           Osamu Aoki <osamu@debian.org>
+Build-Depends: cmake, debhelper (>= 9), dpkg-dev (>= 1.16.1.1~)
+Standards-Version: 3.9.4
 Section: libs
 Homepage: http://code.google.com/p/opencc
-Vcs-Git: git://git.debian.org/git/pkg-ime/opencc.git
-Vcs-Browser: http://git.debian.org/?p=pkg-ime/opencc.git
-DM-Upload-Allowed: yes
+Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/opencc.git
 
 Package: opencc
 Section: utils
 Architecture: any
-Depends: libopencc1 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: simplified-traditional chinese conversion tool
  opencc is a library for converting character between traditional chinese and
- simplified chinese. 
+ simplified chinese.
  .
  This package includes the conversion tool.
 
@@ -25,12 +26,12 @@ Package: libopencc1
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libopencc0
 Conflicts: libopencc0
 Description: simplified-traditional chinese conversion library - runtime
  opencc is a library for converting character between traditional chinese and
- simplified chinese. 
+ simplified chinese.
  .
  This package includes the shared library.
 
@@ -40,7 +41,7 @@ Architecture: any
 Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
 Description: simplified-traditional chinese conversion library - development
  opencc is a library for converting character between traditional chinese and
- simplified chinese. 
+ simplified chinese.
  .
  This package includes the development support files.
 

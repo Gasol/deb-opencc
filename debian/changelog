@@ -1,3 +1,11 @@
+opencc (0.4.3-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Update watch file.
+  * Clean up debian/control and wrap-and-sort.
+
+ -- Osamu Aoki <osamu@debian.org>  Sat, 14 Sep 2013 23:40:00 +0900
+
 opencc (0.4.0-1) experimental; urgency=low
 
   * New upstream release
