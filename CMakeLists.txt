@@ -1,7 +1,7 @@
 #
 # Open Chinese Convert
 #
-# Copyright 2010 BYVoid <byvoid.kcp@gmail.com>
+# Copyright 2010-2013 BYVoid <byvoid@byvoid.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ set (PACKAGE_URL http://code.google.com/p/opencc)
 set (PACKAGE_BUGREPORT http://code.google.com/p/opencc/issues/entry)
 set (OPENCC_VERSION_MAJOR 0)
 set (OPENCC_VERSION_MINOR 4)
-set (OPENCC_VERSION_REVISION 0)
+set (OPENCC_VERSION_REVISION 3)
 
 if (CMAKE_BUILD_TYPE MATCHES Debug)
 	set (version_suffix .Debug)
@@ -43,11 +43,12 @@ set(CPACK_SOURCE_PACKAGE_FILE_NAME
   "${PACKAGE_NAME}-${OPENCC_VERSION_MAJOR}.${OPENCC_VERSION_MINOR}.${OPENCC_VERSION_REVISION}"
 )
 set(CPACK_SOURCE_IGNORE_FILES
-  "/build/;/release/;/debug/;/.git/;.gitignore;~$;${CPACK_SOURCE_IGNORE_FILES}"
+  "/build/;/release/;/debug/;/other/;/opencc.xcodeproj/;/.git/;.gitignore;~$;${CPACK_SOURCE_IGNORE_FILES}"
 )
 include(CPack)
 
 ######## Validation
+option(BUILD_DOCUMENTATION "Use Doxygen to create the HTML based API documentation" OFF)
 
 if (ENABLE_GETTEXT)
 	find_package(Gettext REQUIRED)

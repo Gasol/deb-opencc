@@ -1,9 +1,9 @@
 set(
 	LIBOPENCC_DICTIONARY_SOURCES
-	../dictionary/abstract.c
+	../dict.c
 	../dictionary/datrie.c
 	../dictionary/text.c
-	../dictionary/abstract.h
+	../dict.h
 	../dictionary/datrie.h
 	../dictionary/text.h
 )
@@ -12,10 +12,10 @@ set(
 	OPENCC_DCIT_SOURCES
 	${LIBOPENCC_DICTIONARY_SOURCES}
 	opencc_dict.c
-	../dictionary_group.c
-	../dictionary_group.h
-	../dictionary_set.c
-	../dictionary_set.h
+	../dict_group.c
+	../dict_group.h
+	../dict_chain.c
+	../dict_chain.h
 	../config_reader.c
 	../config_reader.h
 	../encoding.c

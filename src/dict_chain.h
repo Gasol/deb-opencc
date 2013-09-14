@@ -16,28 +16,17 @@
  * limitations under the License.
  */
 
-#ifndef __OPENCC_CONFIG_H_
-#define __OPENCC_CONFIG_H_
+#ifndef __DICTIONARY_SET_H_
+#define __DICTIONARY_SET_H_
 
 #include "common.h"
-#include "dict_chain.h"
 
-typedef enum {
-  CONFIG_ERROR_VOID,
-  CONFIG_ERROR_CANNOT_ACCESS_CONFIG_FILE,
-  CONFIG_ERROR_PARSE,
-  CONFIG_ERROR_NO_PROPERTY,
-  CONFIG_ERROR_INVALID_DICT_TYPE,
-} config_error;
+DictChain* dict_chain_new(Config* config);
 
-Config* config_open(const char* filename);
+void dict_chain_delete(DictChain* dict_chain);
 
-void config_close(Config* config);
+DictGroup* dict_chain_add_group(DictChain* dict_chain);
 
-DictChain* config_get_dict_chain(Config* config);
+DictGroup* dict_chain_get_group(DictChain* dict_chain, size_t index);
 
-config_error config_errno(void);
-
-void config_perror(const char* spec);
-
-#endif /* __OPENCC_CONFIG_H_ */
+#endif /* __DICTIONARY_SET_H_ */
