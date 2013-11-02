@@ -2,9 +2,9 @@ Description: install data file to meet the need of multi-arch
  Install data files to ${DIR_LIBRARY} instead of ${DIR_SHARE}
 Author: Asias He <asias@debian.org>
 ---
---- opencc-0.4.0.orig/CMakeLists.txt
-+++ opencc-0.4.0/CMakeLists.txt
-@@ -95,7 +95,7 @@ if (DEFINED SYSCONF_INSTALL_DIR)
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -96,7 +96,7 @@
  	set (DIR_ETC ${SYSCONF_INSTALL_DIR})
  endif (DEFINED SYSCONF_INSTALL_DIR)
  
