@@ -5,7 +5,7 @@ Uploaders: LI Daobing <lidaobing@debian.org>,
            Asias He <asias@debian.org>,
            YunQiang Su <wzssyqa@gmail.com>,
            Osamu Aoki <osamu@debian.org>
-Build-Depends: cmake, debhelper (>= 9), dpkg-dev (>= 1.16.1.1~)
+Build-Depends: cmake, debhelper (>= 9), dpkg-dev (>= 1.16.1.1~), python-all
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://code.google.com/p/opencc
@@ -46,6 +46,16 @@ Description: simplified-traditional chinese conversion library - development
  simplified chinese.
  .
  This package includes the development support files.
+
+Package: python-opencc
+Section: python
+Architecture: all
+Depends: libopencc1, ${misc:Depends}, ${python:Depends}
+Description: simplified-traditional chinese conversion library - Python support
+ opencc is a library for converting character between traditional chinese and
+ simplified chinese.
+ .
+ This package includes the Python binding.
 
 Package: libopencc-dbg
 Section: debug
