@@ -1,7 +1,8 @@
-opencc (0.4.3-2) UNRELEASED; urgency=low
+opencc (0.4.3-2) unstable; urgency=low
 
   * Add the python-opencc package to support the Python binding. 
-    Closes: #694993 
+    Closes: #694993
+  * Bump standard version to 3.9.5.
 
  -- Osamu Aoki <osamu@debian.org>  Sat, 02 Nov 2013 12:17:51 +0900
 

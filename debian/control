@@ -5,8 +5,8 @@ Uploaders: LI Daobing <lidaobing@debian.org>,
            Asias He <asias@debian.org>,
            YunQiang Su <wzssyqa@gmail.com>,
            Osamu Aoki <osamu@debian.org>
-Build-Depends: cmake, debhelper (>= 9), dpkg-dev (>= 1.16.1.1~), python-all
-Standards-Version: 3.9.4
+Build-Depends: cmake, debhelper (>= 9), python-all
+Standards-Version: 3.9.5
 Section: libs
 Homepage: http://code.google.com/p/opencc
 Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
