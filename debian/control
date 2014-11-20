@@ -5,8 +5,15 @@ Uploaders: LI Daobing <lidaobing@debian.org>,
            Asias He <asias@debian.org>,
            YunQiang Su <wzssyqa@gmail.com>,
            Osamu Aoki <osamu@debian.org>
-Build-Depends: cmake, debhelper (>= 9), python-all
-Standards-Version: 3.9.5
+Build-Depends: cmake,
+               darts,
+               debhelper (>= 9),
+               doxygen,
+               libjs-jquery,
+               libtclap-dev,
+               python,
+               rapidjson-dev
+Standards-Version: 3.9.6
 Section: libs
 Homepage: http://code.google.com/p/opencc
 Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
@@ -16,14 +23,14 @@ Package: opencc
 Section: utils
 Architecture: any
 Multi-Arch: foreign
-Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libopencc2 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: simplified-traditional chinese conversion tool
  opencc is a library for converting character between traditional chinese and
  simplified chinese.
  .
  This package includes the conversion tool.
 
-Package: libopencc1
+Package: libopencc2
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -40,29 +47,19 @@ Package: libopencc-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
+Depends: libjs-jquery, libopencc2 (= ${binary:Version}), ${misc:Depends}
 Description: simplified-traditional chinese conversion library - development
  opencc is a library for converting character between traditional chinese and
  simplified chinese.
  .
  This package includes the development support files.
 
-Package: python-opencc
-Section: python
-Architecture: all
-Depends: libopencc1, ${misc:Depends}, ${python:Depends}
-Description: simplified-traditional chinese conversion library - Python support
- opencc is a library for converting character between traditional chinese and
- simplified chinese.
- .
- This package includes the Python binding.
-
 Package: libopencc-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Multi-Arch: same
-Depends: libopencc1 (= ${binary:Version}), ${misc:Depends}
+Depends: libopencc2 (= ${binary:Version}), ${misc:Depends}
 Description: simplified-traditional chinese conversion library - debug
  opencc is a library for converting character between traditional chinese and
  simplified chinese.

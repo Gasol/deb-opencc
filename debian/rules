@@ -9,15 +9,23 @@ CFLAGS += $(CPPFLAGS)
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
-	dh $@ --with python2
+	dh $@ --buildsystem=cmake --parallel
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)/ \
 		-DCMAKE_BUILD_TYPE=Release \
-		-DENABLE_GETTEXT:BOOL=ON
+		-DBUILD_DOCUMENTATION=ON
+
+override_dh_auto_install:
+	dh_auto_install
+	ln -sf /usr/share/javascript/jquery/jquery.js debian/tmp/usr/share/opencc/doc/html/jquery.js
+
+override_dh_auto_clean:
+	dh_auto_clean
+	find . -name *.pyc -delete
 
 override_dh_strip:
-	dh_strip -plibopencc1 --dbg-package=libopencc-dbg
+	dh_strip -plibopencc2 --dbg-package=libopencc-dbg
 	dh_strip

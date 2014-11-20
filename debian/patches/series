@@ -1,1 +1,3 @@
-install-data-file-to-meet-need-of-multi-arch
+lib-name-match-soversion.patch
+install-data-file-to-meet-need-of-multi-arch.patch
+use-system-libraries.patch

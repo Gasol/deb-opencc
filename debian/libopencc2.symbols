@@ -1,0 +1,290 @@
+libopencc.so.2 libopencc2 #MINVER#
+ opencc_close@Base 1.0.2
+ opencc_convert_utf8@Base 1.0.2
+ opencc_convert_utf8_free@Base 1.0.2
+ opencc_convert_utf8_to_buffer@Base 1.0.2
+ opencc_error@Base 1.0.2
+ opencc_open@Base 1.0.2
+ (c++)"char* std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_construct<std::istreambuf_iterator<char, std::char_traits<char> > >(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::allocator<char> const&, std::input_iterator_tag)@Base" 1.0.2
+ (c++)"Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::~DoubleArrayImpl()@Base" 1.0.2
+ (c++)"Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::insert(std::vector<Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t, std::allocator<Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t> > const&)@Base" 1.0.2
+ (c++)"guard variable for rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >& rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::operator[]<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&)::NullValue@Base" 1.0.2
+ (c++)"non-virtual thunk to opencc::DartsDict::SerializeToFile(_IO_FILE*) const@Base" 1.0.2
+ (c++)"non-virtual thunk to opencc::TextDict::SerializeToFile(_IO_FILE*) const@Base" 1.0.2
+ (c++)"opencc::BinaryDict::~BinaryDict()@Base" 1.0.2
+ (c++)"opencc::BinaryDict::ConstructBuffer(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::vector<unsigned long, std::allocator<unsigned long> >&, unsigned long&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::vector<unsigned long, std::allocator<unsigned long> >&, unsigned long&) const@Base" 1.0.2
+ (c++)"opencc::BinaryDict::KeyMaxLength() const@Base" 1.0.2
+ (c++)"opencc::BinaryDict::NewFromFile(_IO_FILE*)@Base" 1.0.2
+ (c++)"opencc::BinaryDict::SerializeToFile(_IO_FILE*) const@Base" 1.0.2
+ (c++)"opencc::Config::~Config()@Base" 1.0.2
+ (c++)"opencc::Config::Config()@Base" 1.0.2
+ (c++)"opencc::ConfigInternal::ParseDict(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&)@Base" 1.0.2
+ (c++)"opencc::ConfigInternal::ParseSegmentation(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&)@Base" 1.0.2
+ (c++)"opencc::Config::NewFromFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::Config::NewFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::ConversionChain::ConversionChain(std::list<std::shared_ptr<opencc::Conversion>, std::allocator<std::shared_ptr<opencc::Conversion> > >)@Base" 1.0.2
+ (c++)"opencc::ConversionChain::Convert(std::shared_ptr<opencc::Segments> const&) const@Base" 1.0.2
+ (c++)"opencc::Conversion::Convert(char const*) const@Base" 1.0.2
+ (c++)"opencc::Conversion::Convert(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 1.0.2
+ (c++)"opencc::Conversion::Convert(std::shared_ptr<opencc::Segments> const&) const@Base" 1.0.2
+ (c++)"opencc::Converter::Convert(char const*, char*) const@Base" 1.0.2
+ (c++)"opencc::Converter::~Converter()@Base" 1.0.2
+ (c++)"opencc::Converter::Convert(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 1.0.2
+ (c++)"opencc::DartsDict::~DartsDict()@Base" 1.0.2
+ (c++)"opencc::DartsDict::DartsDict()@Base" 1.0.2
+ (c++)"opencc::DartsDict::GetLexicon() const@Base" 1.0.2
+ (c++)"opencc::DartsDict::KeyMaxLength() const@Base" 1.0.2
+ (c++)"opencc::DartsDict::Match(char const*) const@Base" 1.0.2
+ (c++)"opencc::DartsDict::MatchPrefix(char const*) const@Base" 1.0.2
+ (c++)"opencc::DartsDict::NewFromDict(opencc::Dict const&)@Base" 1.0.2
+ (c++)"opencc::DartsDict::NewFromFile(_IO_FILE*)@Base" 1.0.2
+ (c++)"opencc::DartsDict::SerializeToFile(_IO_FILE*) const@Base" 1.0.2
+ (c++)"opencc::DictEntry::PtrLessThan(opencc::DictEntry const*, opencc::DictEntry const*)@Base" 1.0.2
+ (c++)"opencc::DictGroup::~DictGroup()@Base" 1.0.2
+ (c++)"opencc::DictGroup::DictGroup(std::list<std::shared_ptr<opencc::Dict>, std::allocator<std::shared_ptr<opencc::Dict> > > const&)@Base" 1.0.2
+ (c++)"opencc::DictGroup::GetLexicon() const@Base" 1.0.2
+ (c++)"opencc::DictGroup::KeyMaxLength() const@Base" 1.0.2
+ (c++)"opencc::DictGroup::MatchAllPrefixes(char const*) const@Base" 1.0.2
+ (c++)"opencc::DictGroup::Match(char const*) const@Base" 1.0.2
+ (c++)"opencc::DictGroup::MatchPrefix(char const*) const@Base" 1.0.2
+ (c++)"opencc::DictGroup::NewFromDict(opencc::Dict const&)@Base" 1.0.2
+ (c++)"opencc::Dict::MatchAllPrefixes(char const*) const@Base" 1.0.2
+ (c++)"opencc::Dict::MatchPrefix(char const*) const@Base" 1.0.2
+ (c++)"opencc::Exception::~Exception()@Base" 1.0.2
+ (c++)"opencc::Exception::what() const@Base" 1.0.2
+ (c++)"opencc::FileNotFound::~FileNotFound()@Base" 1.0.2
+ (c++)"opencc::FileNotFound::FileNotFound(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::FileNotWritable::~FileNotWritable()@Base" 1.0.2
+ (c++)"opencc::FileNotWritable::FileNotWritable(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::InvalidFormat::~InvalidFormat()@Base" 1.0.2
+ (c++)"opencc::InvalidFormat::InvalidFormat(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::InvalidTextDictionary::~InvalidTextDictionary()@Base" 1.0.2
+ (c++)"opencc::InvalidTextDictionary::InvalidTextDictionary(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long)@Base" 1.0.2
+ (c++)"opencc::InvalidUTF8::~InvalidUTF8()@Base" 1.0.2
+ (c++)"opencc::InvalidUTF8::InvalidUTF8(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::MaxMatchSegmentation::~MaxMatchSegmentation()@Base" 1.0.2
+ (c++)"opencc::MaxMatchSegmentation::Segment(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 1.0.2
+ (c++)"opencc::MultiValueDictEntry::GetDefault() const@Base" 1.0.2
+ (c++)"opencc::MultiValueDictEntry::ToString() const@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::GetDefault() const@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::Key() const@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::~NoValueDictEntry()@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::NumValues() const@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::ToString() const@Base" 1.0.2
+ (c++)"opencc::NoValueDictEntry::Values() const@Base" 1.0.2
+ (c++)"opencc::PtrDictEntry::Key() const@Base" 1.0.2
+ (c++)"opencc::PtrDictEntry::NumValues() const@Base" 1.0.2
+ (c++)"opencc::PtrDictEntry::~PtrDictEntry()@Base" 1.0.2
+ (c++)"opencc::PtrDictEntry::Values() const@Base" 1.0.2
+ (c++)"opencc::Segments::~Segments()@Base" 1.0.2
+ (c++)"opencc::Segments::ToString() const@Base" 1.0.2
+ (c++)"opencc::SerializableDict::SerializeToFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::Convert(char const*, char*) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::Convert(char const*) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::Convert(char const*, unsigned long, char*) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::Convert(char const*, unsigned long) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::Convert(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::~SimpleConverter()@Base" 1.0.2
+ (c++)"opencc::SimpleConverter::SimpleConverter(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"opencc::SingleValueDictEntry::GetDefault() const@Base" 1.0.2
+ (c++)"opencc::SingleValueDictEntry::NumValues() const@Base" 1.0.2
+ (c++)"opencc::SingleValueDictEntry::ToString() const@Base" 1.0.2
+ (c++)"opencc::SingleValueDictEntry::Values() const@Base" 1.0.2
+ (c++)"opencc::StrMultiValueDictEntry::Key() const@Base" 1.0.2
+ (c++)"opencc::StrMultiValueDictEntry::NumValues() const@Base" 1.0.2
+ (c++)"opencc::StrMultiValueDictEntry::~StrMultiValueDictEntry()@Base" 1.0.2
+ (c++)"opencc::StrMultiValueDictEntry::Values() const@Base" 1.0.2
+ (c++)"opencc::StrSingleValueDictEntry::Key() const@Base" 1.0.2
+ (c++)"opencc::StrSingleValueDictEntry::~StrSingleValueDictEntry()@Base" 1.0.2
+ (c++)"opencc::StrSingleValueDictEntry::Value() const@Base" 1.0.2
+ (c++)"opencc::TextDict::GetLexicon() const@Base" 1.0.2
+ (c++)"opencc::TextDict::KeyMaxLength() const@Base" 1.0.2
+ (c++)"opencc::TextDict::Match(char const*) const@Base" 1.0.2
+ (c++)"opencc::TextDict::NewFromDict(opencc::Dict const&)@Base" 1.0.2
+ (c++)"opencc::TextDict::NewFromFile(_IO_FILE*)@Base" 1.0.2
+ (c++)"opencc::TextDict::NewFromSortedFile(_IO_FILE*)@Base" 1.0.2
+ (c++)"opencc::TextDict::SerializeToFile(_IO_FILE*) const@Base" 1.0.2
+ (c++)"opencc::TextDict::~TextDict()@Base" 1.0.2
+ (c++)"opencc::TextDict::TextDict(std::shared_ptr<opencc::Lexicon> const&)@Base" 1.0.2
+ (c++)"opencc::UTF8Util::SkipUtf8Bom(_IO_FILE*)@Base" 1.0.2
+ (c++)"rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::~GenericValue()@Base" 1.0.2
+ (c++)"rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >& rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::operator[]<rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> > const&)::NullValue@Base" 1.0.2
+ (c++)"rapidjson::internal::Pow10(int)::e@Base" 1.0.2
+ (c++)"std::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >, true> > >::_M_allocate_node<std::piecewise_construct_t const&, std::tuple<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::piecewise_construct_t const&, std::tuple<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&)@Base" 1.0.2
+ (c++)"std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >, true> > >::_M_allocate_node<std::piecewise_construct_t const&, std::tuple<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::piecewise_construct_t const&, std::tuple<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&)@Base" 1.0.2
+ (c++)"std::__detail::_Map_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::__detail::_Map_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::__detail::_Map_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::_Hashtable<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> >, true>*)@Base" 1.0.2
+ (c++)"std::_Hashtable<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >, true>*)@Base" 1.0.2
+ (c++)"std::_Hashtable<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > > >, std::__detail::_Select1st, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >, true>*)@Base" 1.0.2
+ (c++)"std::_List_base<std::shared_ptr<opencc::Conversion>, std::allocator<std::shared_ptr<opencc::Conversion> > >::_M_clear()@Base" 1.0.2
+ (c++)"std::_List_base<std::shared_ptr<opencc::Dict>, std::allocator<std::shared_ptr<opencc::Dict> > >::_M_clear()@Base" 1.0.2
+ (c++)"std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> >::~pair()@Base" 1.0.2
+ (c++)"std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > >::~pair()@Base" 1.0.2
+ (c++)"std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unordered_map<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::shared_ptr<opencc::Dict>, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::shared_ptr<opencc::Dict> > > > > > > >::~pair()@Base" 1.0.2
+ (c++)"std::_Rb_tree<unsigned long, std::pair<unsigned long const, opencc::DictEntry const*>, std::_Select1st<std::pair<unsigned long const, opencc::DictEntry const*> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, opencc::DictEntry const*> > >::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, opencc::DictEntry const*> >*)@Base" 1.0.2
+ (c++)"std::_Rb_tree<unsigned long, std::pair<unsigned long const, opencc::DictEntry const*>, std::_Select1st<std::pair<unsigned long const, opencc::DictEntry const*> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, opencc::DictEntry const*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<unsigned long const, opencc::DictEntry const*> >, unsigned long const&)@Base" 1.0.2
+ (c++)"std::shared_ptr<opencc::Dict> opencc::ConfigInternal::LoadDictWithPaths<opencc::DartsDict>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::shared_ptr<opencc::Dict> opencc::ConfigInternal::LoadDictWithPaths<opencc::TextDict>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(std::type_info const&)@Base" 1.0.2
+ (c++)"std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr()@Base" 1.0.2
+ (c++)"std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::reserve(unsigned long)@Base" 1.0.2
+ (c++)"typeinfo for Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >@Base" 1.0.2
+ (c++)"typeinfo for opencc::BinaryDict@Base" 1.0.2
+ (c++)"typeinfo for opencc::Config@Base" 1.0.2
+ (c++)"typeinfo for opencc::DartsDict@Base" 1.0.2
+ (c++)"typeinfo for opencc::Dict@Base" 1.0.2
+ (c++)"typeinfo for opencc::DictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::DictGroup@Base" 1.0.2
+ (c++)"typeinfo for opencc::Exception@Base" 1.0.2
+ (c++)"typeinfo for opencc::FileNotFound@Base" 1.0.2
+ (c++)"typeinfo for opencc::FileNotWritable@Base" 1.0.2
+ (c++)"typeinfo for opencc::InvalidFormat@Base" 1.0.2
+ (c++)"typeinfo for opencc::InvalidTextDictionary@Base" 1.0.2
+ (c++)"typeinfo for opencc::InvalidUTF8@Base" 1.0.2
+ (c++)"typeinfo for opencc::MaxMatchSegmentation@Base" 1.0.2
+ (c++)"typeinfo for opencc::MultiValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::NoValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::PtrDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::Segmentation@Base" 1.0.2
+ (c++)"typeinfo for opencc::SerializableDict@Base" 1.0.2
+ (c++)"typeinfo for opencc::SingleValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::StrMultiValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::StrSingleValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo for opencc::TextDict@Base" 1.0.2
+ (c++)"typeinfo for std::_Mutex_base<(__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo for std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >@Base" 1.0.2
+ (c++)"typeinfo name for opencc::BinaryDict@Base" 1.0.2
+ (c++)"typeinfo name for opencc::Config@Base" 1.0.2
+ (c++)"typeinfo name for opencc::DartsDict@Base" 1.0.2
+ (c++)"typeinfo name for opencc::Dict@Base" 1.0.2
+ (c++)"typeinfo name for opencc::DictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::DictGroup@Base" 1.0.2
+ (c++)"typeinfo name for opencc::Exception@Base" 1.0.2
+ (c++)"typeinfo name for opencc::FileNotFound@Base" 1.0.2
+ (c++)"typeinfo name for opencc::FileNotWritable@Base" 1.0.2
+ (c++)"typeinfo name for opencc::InvalidFormat@Base" 1.0.2
+ (c++)"typeinfo name for opencc::InvalidTextDictionary@Base" 1.0.2
+ (c++)"typeinfo name for opencc::InvalidUTF8@Base" 1.0.2
+ (c++)"typeinfo name for opencc::MaxMatchSegmentation@Base" 1.0.2
+ (c++)"typeinfo name for opencc::MultiValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::NoValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::PtrDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::Segmentation@Base" 1.0.2
+ (c++)"typeinfo name for opencc::SerializableDict@Base" 1.0.2
+ (c++)"typeinfo name for opencc::SingleValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::StrMultiValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::StrSingleValueDictEntry@Base" 1.0.2
+ (c++)"typeinfo name for opencc::TextDict@Base" 1.0.2
+ (c++)"typeinfo name for std::_Mutex_base<(__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"typeinfo name for std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseNumber<1u, rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator> >(rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>&)@Base" 1.0.2
+ (c++)"void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseStringToStream<1u, rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >, rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> > >(rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >&)::escape@Base" 1.0.2
+ (c++)"void rapidjson::GenericReader<rapidjson::UTF8<char>, rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::ParseValue<1u, rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator> >(rapidjson::GenericInsituStringStream<rapidjson::UTF8<char> >&, rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>, rapidjson::CrtAllocator>&)@Base" 1.0.2
+ (c++)"void std::_Destroy_aux<false>::__destroy<std::basic_string<char, std::char_traits<char>, std::allocator<char> >*>(std::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >*)@Base" 1.0.2
+ (c++)"void std::vector<char const*, std::allocator<char const*> >::_M_emplace_back_aux<char const*>(char const*&&)@Base" 1.0.2
+ (c++)"void std::vector<char const*, std::allocator<char const*> >::_M_emplace_back_aux<char const* const&>(char const* const&)@Base" 1.0.2
+ (c++)"void std::vector<Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t, std::allocator<Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t> >::_M_emplace_back_aux<Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t const&>(Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >::node_t const&)@Base" 1.0.2
+ (c++)"void std::vector<opencc::DictEntry const*, std::allocator<opencc::DictEntry const*> >::_M_emplace_back_aux<opencc::DictEntry const* const&>(opencc::DictEntry const* const&)@Base" 1.0.2
+ (c++)"void std::vector<opencc::DictEntry*, std::allocator<opencc::DictEntry*> >::_M_emplace_back_aux<opencc::DictEntry* const&>(opencc::DictEntry* const&)@Base" 1.0.2
+ (c++)"void std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.0.2
+ (c++)"void std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)@Base" 1.0.2
+ (c++)"void std::vector<std::pair<unsigned long, bool>, std::allocator<std::pair<unsigned long, bool> > >::_M_emplace_back_aux<std::pair<unsigned long, bool> >(std::pair<unsigned long, bool>&&)@Base" 1.0.2
+ (c++)"void std::vector<unsigned long, std::allocator<unsigned long> >::_M_emplace_back_aux<unsigned long>(unsigned long&&)@Base" 1.0.2
+ (c++)"vtable for Darts::DoubleArrayImpl<char, unsigned char, int, unsigned int, Darts::Length<char> >@Base" 1.0.2
+ (c++)"vtable for opencc::BinaryDict@Base" 1.0.2
+ (c++)"vtable for opencc::Config@Base" 1.0.2
+ (c++)"vtable for opencc::DartsDict@Base" 1.0.2
+ (c++)"vtable for opencc::Dict@Base" 1.0.2
+ (c++)"vtable for opencc::DictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::DictGroup@Base" 1.0.2
+ (c++)"vtable for opencc::Exception@Base" 1.0.2
+ (c++)"vtable for opencc::FileNotFound@Base" 1.0.2
+ (c++)"vtable for opencc::FileNotWritable@Base" 1.0.2
+ (c++)"vtable for opencc::InvalidFormat@Base" 1.0.2
+ (c++)"vtable for opencc::InvalidTextDictionary@Base" 1.0.2
+ (c++)"vtable for opencc::InvalidUTF8@Base" 1.0.2
+ (c++)"vtable for opencc::MaxMatchSegmentation@Base" 1.0.2
+ (c++)"vtable for opencc::MultiValueDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::NoValueDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::PtrDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::Segmentation@Base" 1.0.2
+ (c++)"vtable for opencc::SerializableDict@Base" 1.0.2
+ (c++)"vtable for opencc::SingleValueDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::StrMultiValueDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::StrSingleValueDictEntry@Base" 1.0.2
+ (c++)"vtable for opencc::TextDict@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::BinaryDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::ConversionChain*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::Conversion*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::Converter*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::DartsDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::DictGroup*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::Lexicon*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::MaxMatchSegmentation*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::Segments*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
+ (c++)"vtable for std::_Sp_counted_ptr<opencc::TextDict*, (__gnu_cxx::_Lock_policy)2>@Base" 1.0.2
