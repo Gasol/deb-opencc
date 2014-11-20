@@ -1,11 +1,3 @@
-install(
-	FILES
-		opencc.1
-		opencc_dict.1
-	DESTINATION
-		${DIR_SHARE}/man/man1
-)
-
 if(BUILD_DOCUMENTATION)
     find_package(Doxygen)
     if (NOT DOXYGEN_FOUND)
@@ -37,7 +29,7 @@ if(BUILD_DOCUMENTATION)
     	DIRECTORY
     		${CMAKE_BINARY_DIR}/doc/html
     	DESTINATION
-    		${DIR_SHARE_OPENCC}/doc
+    		${DIR_SHARE_OPENCC}doc
     )
 
     set_directory_properties(
