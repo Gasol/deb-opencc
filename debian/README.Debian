@@ -1,0 +1,3 @@
+Package using libopencc should always require a tight versioned dependency to
+make sure it depends on the exact upstream minor version to avoid
+incomaptibility.
