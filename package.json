@@ -1,6 +1,6 @@
 {
   "name": "opencc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Conversion between Traditional and Simplified Chinese",
   "author": "BYVoid <byvoid@byvoid.com>",
   "license": "Apache",
@@ -25,5 +25,8 @@
   ],
   "devDependencies": {
     "mocha": "1.8.1"
+  },
+  "dependencies": {
+    "nan": "^1.6.2"
   }
 }
