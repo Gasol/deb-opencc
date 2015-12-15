@@ -4,7 +4,8 @@ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
 Uploaders: LI Daobing <lidaobing@debian.org>,
            Asias He <asias@debian.org>,
            YunQiang Su <wzssyqa@gmail.com>,
-           Osamu Aoki <osamu@debian.org>
+           Osamu Aoki <osamu@debian.org>,
+           Aron Xu <aron@debian.org>
 Build-Depends: cmake,
                darts,
                debhelper (>= 9),
@@ -15,7 +16,7 @@ Build-Depends: cmake,
                rapidjson-dev
 Standards-Version: 3.9.6
 Section: libs
-Homepage: http://code.google.com/p/opencc
+Homepage: https://github.com/BYVoid/OpenCC
 Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/opencc.git
 
