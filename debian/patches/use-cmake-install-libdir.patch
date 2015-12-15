@@ -1,0 +1,13 @@
+Index: opencc/CMakeLists.txt
+===================================================================
+--- opencc.orig/CMakeLists.txt
++++ opencc/CMakeLists.txt
+@@ -69,7 +69,7 @@ set (DIR_INCLUDE ${DIR_PREFIX}/include/)
+ set (DIR_SHARE ${DIR_PREFIX}/share/)
+ set (DIR_ETC ${DIR_PREFIX}/etc/)
+ set (LIB_SUFFIX "")
+-set (DIR_LIBRARY ${DIR_PREFIX}/lib${LIB_SUFFIX}/)
++set (DIR_LIBRARY ${CMAKE_INSTALL_LIBDIR})
+ 
+ if (DEFINED SHARE_INSTALL_PREFIX)
+   set (DIR_SHARE ${SHARE_INSTALL_PREFIX})

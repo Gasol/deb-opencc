@@ -1,12 +1,9 @@
-Subject: use system library instead of embeded version
-From: Aron Xu <aron@debian.org>
 Index: opencc/src/CMakeLists.txt
 ===================================================================
 --- opencc.orig/src/CMakeLists.txt
 +++ opencc/src/CMakeLists.txt
-@@ -43,9 +43,8 @@ set(
-   UTF8Util.cpp
- )
+@@ -1,8 +1,7 @@
+ include (GenerateExportHeader)
  
 -include_directories(../deps/darts-clone)
 -include_directories(../deps/rapidjson-0.11)
@@ -14,5 +11,5 @@ Index: opencc/src/CMakeLists.txt
 +include_directories(/usr/include/rapidjson)
 +include_directories(/usr/include/tclap)
  
- add_library(
-   libopencc
+ # Library
+ 
