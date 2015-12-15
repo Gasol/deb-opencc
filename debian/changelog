@@ -1,3 +1,11 @@
+opencc (1.0.3-1) experimental; urgency=medium
+
+  * New upstream release
+  * Add myself to Uploaders
+  * Drop symbols file, see README.Debian
+
+ -- Aron Xu <aron@debian.org>  Wed, 16 Dec 2015 00:34:21 +0800
+
 opencc (1.0.2-1) experimental; urgency=medium
 
   * Team upload for new upstream release.
