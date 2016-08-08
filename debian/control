@@ -18,7 +18,7 @@ Standards-Version: 3.9.8
 Section: libs
 Homepage: https://github.com/BYVoid/OpenCC
 Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ime/opencc.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-ime/opencc.git
 
 Package: opencc
 Section: utils
