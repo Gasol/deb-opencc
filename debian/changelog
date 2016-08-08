@@ -1,3 +1,12 @@
+opencc (1.0.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.4
+  * Update d/watch to Github URL
+  * std-ver: 3.9.6 -> 3.9.8, no change
+  * Update VCS-Browser URL to use HTTPS
+
+ -- Aron Xu <aron@debian.org>  Mon, 08 Aug 2016 14:43:15 +0800
+
 opencc (1.0.3-1) experimental; urgency=medium
 
   * New upstream release
