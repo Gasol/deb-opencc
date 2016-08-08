@@ -14,7 +14,7 @@ Build-Depends: cmake,
                libtclap-dev,
                python,
                rapidjson-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Section: libs
 Homepage: https://github.com/BYVoid/OpenCC
 Vcs-Git: git://anonscm.debian.org/pkg-ime/opencc.git
