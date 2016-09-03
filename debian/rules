@@ -25,7 +25,3 @@ override_dh_auto_install:
 override_dh_auto_clean:
 	dh_auto_clean
 	find . -name *.pyc -delete
-
-override_dh_strip:
-	dh_strip -plibopencc2 --dbg-package=libopencc-dbg
-	dh_strip

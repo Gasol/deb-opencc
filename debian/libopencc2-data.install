@@ -1,0 +1,3 @@
+usr/share/opencc/doc/*
+usr/share/opencc/*.ocd
+usr/share/opencc/*.json

@@ -25,9 +25,9 @@ Section: utils
 Architecture: any
 Multi-Arch: foreign
 Depends: libopencc2 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
-Description: simplified-traditional chinese conversion tool
- opencc is a library for converting character between traditional chinese and
- simplified chinese.
+Description: simplified-traditional Chinese conversion tool
+ opencc is a library for converting character between traditional Chinese and
+ simplified Chinese.
  .
  This package includes the conversion tool.
 
@@ -35,12 +35,10 @@ Package: libopencc2
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Replaces: libopencc0
-Conflicts: libopencc0
-Description: simplified-traditional chinese conversion library - runtime
- opencc is a library for converting character between traditional chinese and
- simplified chinese.
+Depends: ${misc:Depends}, ${shlibs:Depends}, libopencc2-data
+Description: simplified-traditional Chinese conversion library - runtime
+ opencc is a library for converting character between traditional Chinese and
+ simplified Chinese.
  .
  This package includes the shared library.
 
@@ -49,20 +47,20 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libjs-jquery, libopencc2 (= ${binary:Version}), ${misc:Depends}
-Description: simplified-traditional chinese conversion library - development
- opencc is a library for converting character between traditional chinese and
- simplified chinese.
+Description: simplified-traditional Chinese conversion library - development
+ opencc is a library for converting character between traditional Chinese and
+ simplified Chinese.
  .
  This package includes the development support files.
 
-Package: libopencc-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Multi-Arch: same
-Depends: libopencc2 (= ${binary:Version}), ${misc:Depends}
-Description: simplified-traditional chinese conversion library - debug
- opencc is a library for converting character between traditional chinese and
- simplified chinese.
+Package: libopencc2-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Breaks: libopencc-dev (<< 1.0.4-3)
+Replaces: libopencc-dev (<< 1.0.4-3)
+Description: simplified-traditional Chinese conversion library - data files
+ opencc is a library for converting character between traditional Chinese and
+ simplified Chinese.
  .
- This package includes the debug symbols which is useful when debug.
+ This package includes the data files.
