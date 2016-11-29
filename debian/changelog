@@ -1,7 +1,11 @@
 opencc (1.0.4-2) unstable; urgency=medium
 
+  [ Aron Xu ]
   * Install data files to libopencc2-data, drop -dbg package
     (Closes: #836395)
+
+  [ Boyuan Yang ]
+  * Add BSD-3-clause license in d/copyright
 
  -- Aron Xu <aron@debian.org>  Sat, 03 Sep 2016 21:07:26 +0800
 
