@@ -1,3 +1,9 @@
+opencc (1.0.4-3) unstable; urgency=medium
+
+  * Correct Breaks/Conflicts version (Closes: #846665)
+
+ -- Aron Xu <aron@debian.org>  Sun, 04 Dec 2016 16:39:48 +0800
+
 opencc (1.0.4-2) unstable; urgency=medium
 
   [ Aron Xu ]
