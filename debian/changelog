@@ -1,3 +1,9 @@
+opencc (1.0.4-3bintray1~jessie) jessie; urgency=medium
+
+  * Backports to Jessie
+
+ -- Gasol Wu <gasol.wu@gmail.com>  Wed, 21 Dec 2016 17:10:04 +0800
+
 opencc (1.0.4-3) unstable; urgency=medium
 
   * Correct Breaks/Conflicts version (Closes: #846665)
