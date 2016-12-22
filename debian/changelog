@@ -1,3 +1,9 @@
+opencc (1.0.4-3ppa1~xenial) xenial; urgency=medium
+
+  * Release for Xenial
+
+ -- Gasol Wu <gasol.wu@gmail.com>  Thu, 22 Dec 2016 10:32:55 +0800
+
 opencc (1.0.4-3) unstable; urgency=medium
 
   * Correct Breaks/Conflicts version (Closes: #846665)
